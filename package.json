@@ -1,0 +1,75 @@
+{
+  "name": "projecttest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start",
+    "server": "nodemon build/app.js",
+    "e2e": "node build/test/e2e.js",
+    "e2eServer": "node build/test/server.js",
+    "webpackdev": "better-npm-run webpack:dev",
+    "webpackprod": "better-npm-run webpack:prod"
+  },
+  "betterScripts": {
+    "webpack:dev": {
+      "command": "webpack --progress --colors",
+      "env": {
+        "NODE_ENV": "dev"
+      }
+    },
+    "webpack:prod": {
+      "command": "webpack --progress --colors",
+      "env": {
+        "NODE_ENV": "prod"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deng565430/projectTest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deng565430/projectTest/issues"
+  },
+  "homepage": "https://github.com/deng565430/projectTest#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "better-npm-run": "^0.1.0",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.5",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "html-webpack-plugin": "^2.30.1",
+    "jasmine-core": "^2.8.0",
+    "karma": "^1.7.1",
+    "karma-jasmine": "^1.1.1",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "nodemon": "^1.12.4",
+    "optimize-css-assets-webpack-plugin": "^3.2.0",
+    "request-progress": "^3.0.0",
+    "selenium-webdriver": "^3.6.0",
+    "style-loader": "^0.19.0",
+    "supertest": "^3.0.0",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.10.0",
+    "webpack-livereload-plugin": "^1.0.0"
+  },
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "html-withimg-loader": "^0.1.16",
+    "koa": "^2.4.1",
+    "koa-bodyparser": "^4.2.0",
+    "koa-convert": "^1.2.0",
+    "koa-logger": "^3.1.0",
+    "koa-router": "^7.3.0",
+    "koa-static": "^4.0.2",
+    "koa-views": "^6.1.3"
+  }
+}
